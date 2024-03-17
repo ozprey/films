@@ -1,0 +1,166 @@
+
+        :root {
+            --color: rgb(210, 0, 0);
+            --bcolor: rgb(0, 0, 0);
+            --title-color: rgb(115, 255, 0);
+            --text-color: rgb(162, 0, 255);
+        }
+
+        @font-face {
+            font-family: rg;
+            src: url("rg.otf") format("opentype");
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bcolor);
+            color: var(--text-color);
+            font-size: 2.5vmin;
+
+        }
+
+        form {
+            display: flex;
+            justify-content: right;
+            margin-top: 2vmin;
+            text-align: center;
+        }
+
+        input {
+            width: 25vw;
+            height: 5vmin;
+            border-radius: 5rem;
+            border: solid var(--title-color) 2px;
+            box-sizing: border-box;
+            margin-right: 2vmin;
+            background-color: var(--bcolor);
+        }
+
+        input:focus {
+            border-style: none;
+            background-color: var(--text-color);
+            font-family: "Hanken Grotesk", sans-serif;
+
+        }
+
+        button:focus {
+            border-style: none;
+            background-color: var(--title-color);
+            color: black;
+        }
+
+        button {
+            width: fit-content;
+            height: 5vmin;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-style: none;
+            border-radius: 5rem;
+            background-color: black;
+            color: var(--text-color);
+            font-family: "Hanken Grotesk", sans-serif;
+
+        }
+
+        input::placeholder {
+            font-family: "Hanken Grotesk", sans-serif;
+
+            font-style: italic;
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        main {
+            margin-top: 10vmin;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            color: blue;
+        }
+
+        .one,
+        .to,
+        .three {
+            margin: auto;
+            display: block;
+            width: 40vmin;
+            aspect-ratio: 1/1;
+            background-color: var(--bcolor);
+        }
+
+        .one {
+            margin: 2.5vmin;
+            position: relative;
+            border: solid var(--text-color) 5px;
+        }
+
+        .to {
+            aspect-ratio: 16/9;
+        }
+
+        img {
+            width: 100%;
+            filter: grayscale(100%);
+        }
+
+        .three {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100px;
+            background-color: transparent;
+            color: var(--bcolor);
+            z-index: 10;
+            overflow: hidden;
+            /* white-space: nowrap; */
+            text-overflow: clip;
+        }
+
+        .three:hover {
+            
+            height: 35vmin;
+            background-color: var(--title-color);
+            color: var(--bcolor);
+            transition: background 2s ease, height 3s ease, color 5s 3s ease;
+        }
+
+        .plot {
+            display: none;
+           
+        }
+
+        .three:hover .plot {
+            display: block;
+        }
+
+        .textblock {
+            background-color: violet;
+            aspect-ratio: 16/7;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 0.9lh;
+            font-family: rg;
+            color: var(--title-color);
+        }
+
+        .tagline {
+            text-align: center;
+            filter:invert(60%);
+        }
+
+        .crd {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        
+        .ids,.duration,.year{    
+            font-family: "Hanken Grotesk", sans-serif;
+        }
+        .ids{
+            filter: invert(70%);
+        }
+  
