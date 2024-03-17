@@ -6,8 +6,8 @@ body{
     background-color: rgb(0, 0, 0);
     font-family: 'Poppins' ;
 }
-form{display: flex; justify-content: space-between; margin-top: 2vmin; text-align: center;}
-        span{font-family: tilt ; color: palevioletred; margin-left: 2.5vmin; font-size:4vmin;}
+form{display: flex; justify-content: right; margin-top: 2vmin; text-align: center;}
+        span{margin-right: 70vw; font-family: tilt ; color: palevioletred; margin-left: 2.5vmin; font-size:4vmin;}
         input{ width: fit-content;height: 5vmin;  border-radius: 5rem  ; border-style: none; box-sizing: border-box;margin-right: 2vmin ; background-color: grey;}
         input:focus{border-style: none; background-color: palevioletred; }
         button:focus{border-style: none; background-color: blueviolet; }
